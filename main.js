@@ -31,7 +31,7 @@ console.log(isValidEmail('invalid-email'));
 */
 
 function isValidUrl(url) {
-    const urlRegex = /^(https?:\/\/)?([^\s$.?#].[^\s]*)$/i;
+    const urlRegex = /^(https?):\/\/([^:/]+)(?::(\d+))?([^?#]*)(\?[^#]*)?(#.*)?$/;
     return urlRegex.test(url);
 }
 
